@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Monaco, monospace;
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        nav {
+            width: 100%;
+            background-color: white;
+            padding: 1px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 25px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .login-container {
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            justify-content: center;
+            padding: 50px;
+            border-radius: 55px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+            margin-top: 20px;
+            width: 120%;
+            max-width: 500px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .login-container input {
+            width: 93%;
+            padding: 10px;
+            margin: 15px 0;
+            border: 3px solid #ccc;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+        .login-container button {
+            width: 99%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 16px;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            margin: 10px 0;
+        }
+        @media (min-width: 600px) {
+            .login-container {
+                width: 80%;
+            }
+        }
+        @media (min-width: 768px) {
+            .login-container {
+                width: 70%;
+            }
+        }
+        @media (min-width: 992px) {
+            .login-container {
+                width: 60%;
+            }
+        }
+        @media (min-width: 1200px) {
+            .login-container {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>`
+            <li><a href="HOMEPAGE.html"><img src="https://i.pinimg.com/564x/62/a9/39/62a939ddc6b5a916fe2aaa17628f5ed9.jpg" alt="Home Icon"> HOME</a></li>
+            <li><a href="ABOUTPAGE.html"><img src="https://i.pinimg.com/564x/39/20/c6/3920c663f10a9fb8b0c47d927d330c53.jpg" alt="About Us Icon"> ABOUT US</a></li>
+            <li><a href="PRODUCTS and SERVICE.html"><img src="https://i.pinimg.com/564x/bb/b8/8f/bbb88f8748bc11242b4391503a38028e.jpg" alt="Products and Services Icon"> PRODUCTS and SERVICES</a></li>
+        </ul>
+    </nav>
+    <div class="HEPA-LANE 2.0-container">
+        <h2 style="font-size:5vw; font-family: Lucida Handwriting;">HEPA-LANE 2.0</h2>
+    </div>
+    <div class="login-container">
+        <h2 style="text-align: center">LOGIN</h2>
+        <div id="error-message" class="error-message"></div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">LOGIN</button>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (username === "" || password === "") {
+                errorMessage.textContent = "Both fields are required.";
+                return;
+            }
+
+            // Simulate login (in a real application, you'd send a request to the server here)
+            if (username === "username" && password === "password") {
+                alert("Login successful!");
+                errorMessage.textContent = "";
+                window.location.href = "DISCLAIMER.html"; // Redirect to Disclaimer page
+            } else {
+                errorMessage.textContent = "Invalid username or password. Do it Again.";
+            }
+        }
+    </script>
+</body>
+</html>
