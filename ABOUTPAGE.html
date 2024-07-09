@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product/Service Page</title>
+    <title>About Page</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             font-family: Monaco, monospace;
@@ -43,38 +44,53 @@
 			display: flex;
             align-items: center;
         }
-        .products-container {
+        .content-container {
             background: rgba(255, 255, 255, 0.8);
-            padding: 25px;
-            border-radius: 55px;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 3);
+            padding: 13px;
+            border-radius: 15px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
             max-width: 500px;
             width: 100%;
+            margin: 9px auto; /* Adjusted margin for spacing between containers */
+            text-align: justify;
+        }
+        .content-container h1 {
+            margin-bottom: 7px;
+            font-size: 1.93vw;
             text-align: center;
-            margin: 100px auto; /* Adjusted margin for content below navigation */
         }
-        .products-container h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .products-container ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            text-align: left;
-            font-size: 1em;
-        }
-        .products-container ul li {
-            margin: 10px 0;
+        .content-container p {
+            margin-bottom: 7px;
         }
         @media (max-width: 600px) {
-            .products-container h1 {
-                font-size: 1.5em;
+            .content-container {
+                padding: 15px;
+                border-radius: 10px;
             }
-            .products-container ul {
-                font-size: 0.9em;
+            .content-container h1 {
+                font-size: 7vw;
+            }
+            .content-container p {
+                font-size: 4vw;
             }
         }
-		.nav-icons {
+        @media (min-width: 600px) and (max-width: 992px) {
+            .content-container h1 {
+                font-size: 6vw;
+            }
+            .content-container p {
+                font-size: 4vw;
+            }
+        }
+        @media (min-width: 992px) {
+            .content-container h1 {
+                font-size: 3vw;
+            }
+            .content-container p {
+                font-size: 2vw;
+            }
+        }
+        .nav-icons {
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
@@ -92,16 +108,31 @@
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/62/a9/39/62a939ddc6b5a916fe2aaa17628f5ed9.jpg" alt="Home Icon"><a href="HOMEPAGE.html">HOME</a></li>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/39/20/c6/3920c663f10a9fb8b0c47d927d330c53.jpg" alt="About Us Icon"><a href="ABOUTPAGE.html">ABOUT US</a></li>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/bb/b8/8f/bbb88f8748bc11242b4391503a38028e.jpg" alt="Products and Services Icon"><a href="PRODUCTS%20and%20SERVICE.html">PRODUCTS and SERVICES</a></li>
-	    <li class="nav-icons"><img src="https://i.pinimg.com/564x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="LOGIN PAGE"><a href="index.html">LOGIN</a></li>
+            <li class="nav-icons"><img src="https://i.pinimg.com/564x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="Login Icon"><a href="index.html">LOGIN</a></li>
         </ul>
     </nav>
-    <div class="products-container">
-        <h1 style="font-size:2.34vw;">Our Products/Services</h1>
-        <ul>
-            <li style="font-size:1.43vw;">We provide an extensive variety of freshly frozen street foods. Additionally, we prepared them in a stable and hygienic setting.</li>
-            <li style="font-size:1.43vw;">To ensure the comfort of all of our customers, we installed air conditioning units. In an effort to discourage criminality, we also installed CCTV cameras for security purposes.</li>
-            <li style="font-size:1.43vw;">For our recreational pursuits, our WiFi offers fast internet connections. In the meantime, our computer rental stores establish a minimal charge to ease the minds of people who simply need to pass the time for their next class.</li>
-        </ul>
+    <div class="content-container">
+        <h1>About Us</h1>
+    </div>
+    <div class="content-container">
+        <p style="font-size:1.88vw;">MISSION</p>
+        <p style="font-size:1.11vw;">In order to guarantee our customer's satisfaction, HEPA-LANE 2.0 is committed to offering high-quality, healthier meals, comfort for diners, pleasant entertainment, and a welcoming atmosphere.</p>
+    </div>
+    <div class="content-container">
+        <p style="font-size:1.88vw;">VISION</p>
+        <p style="font-size:1.11vw;">The goal of HEPA-LANE 2.0 is to become a local standard for orderly food stands, cleanliness, and eventually fast-food franchises. We try to maintain our customers' healthy lifestyles by adhering to strict government guidelines and restrictions.</p>
+    </div>
+    <div class="content-container">
+        <p style="font-size:1.88vw;">VALUES</p>
+        <p style="font-size:1.55vw;">HEPA-LANE 2.0</p>
+        <p style="font-size:0.99vw;">H - Healthy lifestyle</p>
+        <p style="font-size:0.99vw;">E - Environmentally friendly</p>
+        <p style="font-size:0.99vw;">P - Prices are affordable</p>
+        <p style="font-size:0.99vw;">A - Acceptable meals</p>
+        <p style="font-size:0.99vw;">L - Lively atmosphere</p>
+        <p style="font-size:0.99vw;">A - Appropriate for business</p>
+        <p style="font-size:0.99vw;">N - Neat place</p>
+        <p style="font-size:0.99vw;">E - Eccentric name</p>
     </div>
 </body>
 </html>
