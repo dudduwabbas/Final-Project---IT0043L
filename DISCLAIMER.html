@@ -47,10 +47,13 @@
             align-items: center;
         }
         .disclaimer-container {
-            background: rgba(255, 255, 255, 0.8);
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             padding: 40px;
             border-radius: 55px;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 2);
             max-width: 500px;
             margin-top: 100px; /* Adjust margin top to avoid overlap with nav */
         }
@@ -66,6 +69,21 @@
         }
         .disclaimer-container ul li {
             margin-bottom: 10px;
+        }
+        .additional-info-container {
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 55px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 3);
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        .additional-info-container p {
+            font-size: 1.2em;
+            margin: 5px 0;
         }
         .nav-icons {
             display: flex;
@@ -88,12 +106,21 @@
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="LOGIN PAGE Icon"><a href="index.html">HEPA-LANE 2.0</a></li>
         </ul>
     </nav>
+	<div class="HEPA-LANE 2.0-container">
+        <h2 style="font-size:3.33vw; font-family: Lucida Handwriting;">HEPA-LANE 2.0</h2>
+    </div>
     <div class="disclaimer-container">
-        <h1>!! DISCLAIMER !!</h1>
+        <h1 style="font-size:1.69vw">!! DISCLAIMER !!</h1>
         <ul>
-            <li>This Page/Website is for educational purposes only. It is intended to be the Final Project for our Web Design with Client Side Scripting course/subject here at FEU Institute of Technology.</li>
-            <li>This Final Project was being created during the 3rd Term, 2023-24 school year, from April 16, 2024 to July 12, 2024 in which the FINAL EXAMS for the 3rd term has to come to an end.</li>
+            <li style="font-size:0.99vw">This Page/Website is for educational purposes only. It is intended to be the Final Project for our Web Design with Client Side Scripting course/subject here at FEU Institute of Technology.</li>
+            <li style="font-size:0.99vw">This Final Project was being created during the 3rd Term, 2023-24 school year, from April 16, 2024 to July 12, 2024 in which the FINAL EXAMS for the 3rd term has to come to an end.</li>
         </ul>
+    </div>
+    <div class="additional-info-container">
+        <p style="font-size:1.33vw">David Ysrael Ilao Caadan</p>
+        <p style="font-size:1.33vw">Final Project for IT0043L - TW05-40</p>
+        <p style="font-size:1.33vw">3rd Term, 2023-2024</p>
+        <p style="font-size:1.33vw">July 12, 2024</p>
     </div>
 </body>
 </html>
