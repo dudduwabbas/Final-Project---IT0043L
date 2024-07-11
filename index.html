@@ -53,10 +53,11 @@
             justify-content: center;
             padding: 50px;
             border-radius: 55px;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 2);
             margin-top: 20px;
+			margin-bottom: 20px;
             width: 120%;
-            max-width: 500px;
+            max-width: 700px;
         }
         .login-container h2 {
             margin-bottom: 20px;
@@ -65,7 +66,7 @@
         .login-container input {
             width: 93%;
             padding: 10px;
-            margin: 15px 0;
+            margin: 20px 0;
             border: 3px solid #ccc;
             border-radius: 15px;
             font-size: 16px;
@@ -116,11 +117,36 @@
             height: 50px;
             margin: 0 10px;
         }
+        .contact-info-container {
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            justify-content: center;
+            padding: 20px;
+            border-radius: 55px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 2);
+            margin-top: 20px;
+            width: 120%;
+            max-width: 700px;
+        }
+        .contact-info-container p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .contact-info-container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .contact-info-container ul li {
+            margin-bottom: 5px;
+        }
+        .contact-info-container a {
+            color: black;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <ul>`
+        <ul>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/62/a9/39/62a939ddc6b5a916fe2aaa17628f5ed9.jpg" alt="Home Icon"><a href="HOMEPAGE.html">HOME</a></li>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/39/20/c6/3920c663f10a9fb8b0c47d927d330c53.jpg" alt="About Us Icon"><a href="ABOUTPAGE.html">ABOUT US</a></li>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/bb/b8/8f/bbb88f8748bc11242b4391503a38028e.jpg" alt="Products and Services Icon"><a href="PRODUCTS%20and%20SERVICE.html">PRODUCTS and SERVICES</a></li>
@@ -128,7 +154,7 @@
         </ul>
     </nav>
     <div class="HEPA-LANE 2.0-container">
-        <h2 style="font-size:5vw; font-family: Lucida Handwriting;">HEPA-LANE 2.0</h2>
+        <h2 style="font-size:4vw; font-family: Lucida Handwriting;">HEPA-LANE 2.0</h2>
     </div>
     <div class="login-container">
         <h2 style="text-align: center">LOGIN</h2>
@@ -137,7 +163,34 @@
         <input type="password" id="password" placeholder="PASSWORD">
         <button onclick="login()">LOGIN</button>
     </div>
-
+    <div class="contact-info-container">
+        <ul>
+            <li style="font-size:1.66vw"><strong>Email Address:</strong></li>
+            <ul>
+                <li style="font-size:0.99vw">david96ysrael@gmail.com</li>
+                <li style="font-size:0.99vw">ysrael96david@gmail.com</li>
+            </ul>
+            <li style="font-size:1.66vw"><strong>Facebook:</strong></li>
+            <ul>
+                <li style="font-size:0.99vw"><a href="https://www.facebook.com/davidysrael.caadan/" target="_blank">https://www.facebook.com/davidysrael.caadan/</a></li>
+            </ul>
+            <li style="font-size:1.66vw"><strong>Contact Number:</strong></li>
+            <ul>
+                <li style="font-size:0.99vw">09171290088</li>
+                <li style="font-size:0.99vw">09295651929</li>
+            </ul>
+			<li style="font-size:1.33vw"><strong>For Access of USERNAME and PASSWORD</strong></li>
+			<li style="font-size:1.66vw"><strong>USERNAME:</strong></li>
+			<ul>
+                <li style="font-size:0.99vw">password</li>
+            </ul>
+			<li style="font-size:1.66vw"><strong>PASSWORD:</strong></li>
+			<ul>
+                <li style="font-size:0.99vw">username</li>
+            </ul>
+			
+        </ul>
+    </div>
     <script>
         function login() {
             const username = document.getElementById('username').value;
@@ -150,12 +203,12 @@
             }
 
             // Simulate login (in a real application, you'd send a request to the server here)
-            if (username === "username" && password === "password") {
+            if (username === "password" && password === "username") {
                 alert("Login successful!");
                 errorMessage.textContent = "";
                 window.location.href = "DISCLAIMER.html"; // Redirect to Disclaimer page
             } else {
-                errorMessage.textContent = "Invalid username or password. Do it Again.";
+                errorMessage.textContent = "Invalid username or password. Please try again.";
             }
         }
     </script>
