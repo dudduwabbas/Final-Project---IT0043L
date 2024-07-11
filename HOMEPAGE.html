@@ -40,14 +40,14 @@
             color: black;
             text-decoration: none;
             font-size: 20px;
-			display: flex;
+            display: flex;
             align-items: center;
         }
         .homepage-container {
             background: rgba(255, 255, 255, 0.8);
             padding: 30px;
             border-radius: 55px;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 3);
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
             max-width: 500px;
             margin: 100px auto; /* Adjusted margin for content below navigation */
             text-align: center;
@@ -56,8 +56,13 @@
             margin-bottom: 20px;
             font-size: 5vw;
         }
-        .homepage-container p {
+        .homepage-container ul {
             font-size: 3vw;
+            margin: 0;
+            padding-left: 20px;
+            text-align: justify;
+        }
+        .homepage-container ul li {
             margin-bottom: 20px;
         }
         @media (max-width: 600px) {
@@ -68,7 +73,7 @@
             .homepage-container h1 {
                 font-size: 7vw;
             }
-            .homepage-container p {
+            .homepage-container ul {
                 font-size: 4vw;
             }
         }
@@ -76,7 +81,7 @@
             .homepage-container h1 {
                 font-size: 6vw;
             }
-            .homepage-container p {
+            .homepage-container ul {
                 font-size: 4vw;
             }
         }
@@ -84,11 +89,11 @@
             .homepage-container h1 {
                 font-size: 3vw;
             }
-            .homepage-container p {
+            .homepage-container ul {
                 font-size: 2vw;
             }
         }
-		.nav-icons {
+        .nav-icons {
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
@@ -106,15 +111,17 @@
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/62/a9/39/62a939ddc6b5a916fe2aaa17628f5ed9.jpg" alt="Home Icon"><a href="HOMEPAGE.html">HOME</a></li>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/39/20/c6/3920c663f10a9fb8b0c47d927d330c53.jpg" alt="About Us Icon"><a href="ABOUTPAGE.html">ABOUT US</a></li>
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/bb/b8/8f/bbb88f8748bc11242b4391503a38028e.jpg" alt="Products and Services Icon"><a href="PRODUCTS%20and%20SERVICE.html">PRODUCTS and SERVICES</a></li>
-			<li class="nav-icons"><img src="https://i.pinimg.com/564x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="LOGIN PAGE Icon"><a href="index.html">HEPA-LANE 2.0</a></li>
+            <li class="nav-icons"><img src="https://i.pinimg.com/564x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="LOGIN PAGE Icon"><a href="index.html">HEPA-LANE 2.0</a></li>
         </ul>
     </nav>
     <div class="homepage-container">
         <h1 style="font-size:1.69vw">Welcome to HEPA-LANE 2.0!</h1>
-        <p style="font-size:1.01vw">Given the reputation of the HEPA-LANE in R.Papa Street, near Far Eastern University and University of the East, for being unsanitary, unhygienic, unclean, and possibly contaminated by Hepatitis A or other food-related diseases.</p>
-        <p style="font-size:1.01vw">We reintroduce to you a sanitized, hygienic, cleaner, healthier food and possibly air-conditioned place called HEPA-LANE 2.0.</p>
-        <p style="font-size:1.01vw">HEPA-LANE 2.0 offers a wide variety of dishes, including traditional fish balls, isaw, Lutong Bahay meals, barbecues, kwek-kwek, and many more.</p>
-        <p style="font-size:1.01vw">We have also installed CCTV cameras for security purposes, sanitized and functional bathrooms, a wide variety of entertainment options including billiards, computer rental shops inside the premises, and a limited number of video gaming consoles, TVs, and electric fans. We also have tables and chairs for those who want to eat outside the premises.</p>
+        <ul>
+            <li style="font-size:1.01vw">Given the reputation of the HEPA-LANE in R.Papa Street, near Far Eastern University and University of the East, for being unsanitary, unhygienic, unclean, and possibly contaminated by Hepatitis A or other food-related diseases.</li>
+            <li style="font-size:1.01vw">We reintroduce to you a sanitized, hygienic, cleaner, healthier food and possibly air-conditioned place called HEPA-LANE 2.0.</li>
+            <li style="font-size:1.01vw">HEPA-LANE 2.0 offers a wide variety of dishes, including traditional fish balls, isaw, Lutong Bahay meals, barbecues, kwek-kwek, and many more.</li>
+            <li style="font-size:1.01vw">We have also installed CCTV cameras for security purposes, sanitized and functional bathrooms, a wide variety of entertainment options including billiards, computer rental shops inside the premises, and a limited number of video gaming consoles, TVs, and electric fans. We also have tables and chairs for those who want to eat outside the premises.</li>
+        </ul>
     </div>
 </body>
 </html>
