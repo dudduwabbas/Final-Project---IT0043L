@@ -8,7 +8,7 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
             height: 100vh;
             margin: 0;
@@ -17,6 +17,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            padding-top: 60px;
         }
         nav {
             width: 100%;
@@ -41,41 +42,73 @@
             color: black;
             text-decoration: none;
             font-size: 20px;
-			display: flex;
+            display: flex;
             align-items: center;
         }
         .content-container {
-            background: rgba(255, 255, 255, 0.8);
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             padding: 13px;
-            border-radius: 15px;
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
+            border-radius: 55px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 3);
+            max-width: 750px;
             width: 100%;
             margin: 9px auto; /* Adjusted margin for spacing between containers */
-            text-align: justify;
         }
-        .content-container h1 {
-            margin-bottom: 7px;
-            font-size: 1.93vw;
+        .header-container {
             text-align: center;
         }
+        .header-container h1 {
+            font-size: 1.93vw;
+            margin-bottom: 20px;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .main-container .left-container, .main-container .right-container {
+            flex: 1;
+            margin: 0 50px;
+        }
+        .left-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-container .mission-container, .left-container .vision-container {
+            margin-bottom: 20px;
+            background-image: url('https://i.pinimg.com/564x/2c/36/53/2c3653dfd7314717ca7d4591d64eba87.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 2);
+        }
         .content-container p {
-            margin-bottom: 7px;
+            margin-bottom: 2.22px;
+            text-align: justify;
         }
         @media (max-width: 600px) {
             .content-container {
                 padding: 15px;
                 border-radius: 10px;
             }
-            .content-container h1 {
+            .header-container h1 {
                 font-size: 7vw;
             }
             .content-container p {
                 font-size: 4vw;
             }
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         @media (min-width: 600px) and (max-width: 992px) {
-            .content-container h1 {
+            .header-container h1 {
                 font-size: 6vw;
             }
             .content-container p {
@@ -83,7 +116,7 @@
             }
         }
         @media (min-width: 992px) {
-            .content-container h1 {
+            .header-container h1 {
                 font-size: 3vw;
             }
             .content-container p {
@@ -100,6 +133,14 @@
             height: 50px;
             margin: 0 10px;
         }
+        .values-list {
+            font-size: 0.99vw;
+            margin: 0;
+            padding-left: 20px;
+        }
+        .values-list li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -111,28 +152,34 @@
             <li class="nav-icons"><img src="https://i.pinimg.com/564x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="LOGIN PAGE Icon"><a href="index.html">HEPA-LANE 2.0</a></li>
         </ul>
     </nav>
-    <div class="content-container">
-        <h1>About Us</h1>
+    <div class="content-container header-container">
+        <h1 style="font-size:1.99vw;">ABOUT US</h1>
     </div>
-    <div class="content-container">
-        <p style="font-size:1.88vw;">MISSION</p>
-        <p style="font-size:1.11vw;">In order to guarantee our customer's satisfaction, HEPA-LANE 2.0 is committed to offering high-quality, healthier meals, comfort for diners, pleasant entertainment, and a welcoming atmosphere.</p>
-    </div>
-    <div class="content-container">
-        <p style="font-size:1.88vw;">VISION</p>
-        <p style="font-size:1.11vw;">The goal of HEPA-LANE 2.0 is to become a local standard for orderly food stands, cleanliness, and eventually fast-food franchises. We try to maintain our customers' healthy lifestyles by adhering to strict government guidelines and restrictions.</p>
-    </div>
-    <div class="content-container">
-        <p style="font-size:1.88vw;">VALUES</p>
-        <p style="font-size:1.55vw;">HEPA-LANE 2.0</p>
-        <p style="font-size:0.99vw;">H - Healthy lifestyle</p>
-        <p style="font-size:0.99vw;">E - Environmentally friendly</p>
-        <p style="font-size:0.99vw;">P - Prices are affordable</p>
-        <p style="font-size:0.99vw;">A - Acceptable meals</p>
-        <p style="font-size:0.99vw;">L - Lively atmosphere</p>
-        <p style="font-size:0.99vw;">A - Appropriate for business</p>
-        <p style="font-size:0.99vw;">N - Neat place</p>
-        <p style="font-size:0.99vw;">E - Eccentric name</p>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="content-container mission-container">
+                <p style="font-size:1.88vw;">MISSION</p>
+                <p style="font-size:1.11vw;">In order to guarantee our customer's satisfaction, HEPA-LANE 2.0 is committed to offering high-quality, healthier meals, comfort for diners, pleasant entertainment, and a welcoming atmosphere.</p>
+            </div>
+            <div class="content-container vision-container">
+                <p style="font-size:1.88vw;">VISION</p>
+                <p style="font-size:1.11vw;">The goal of HEPA-LANE 2.0 is to become a local standard for orderly food stands, cleanliness, and eventually fast-food franchises. We try to maintain our customers' healthy lifestyles by adhering to strict government guidelines and restrictions.</p>
+            </div>
+        </div>
+        <div class="content-container right-container">
+            <p style="font-size:1.88vw;">VALUES</p>
+            <p style="font-size:1.55vw;">HEPA-LANE 2.0</p>
+            <ul class="values-list">
+                <li style="font-size:1.11vw;">H - HEALTHY LIFESTYLE</li>
+                <li style="font-size:1.11vw;">E - ENVIRONMENTALLY FRIENDLY</li>
+                <li style="font-size:1.11vw;">P - PRICES ARE AFFORDABLE</li>
+                <li style="font-size:1.11vw;">A - ACCEPTABLE MEALS</li>
+                <li style="font-size:1.11vw;">L - LIVELY ATMOSHPERE</li>
+                <li style="font-size:1.11vw;">A - APPROPRIATE FOR BUSINESS</li>
+                <li style="font-size:1.11vw;">N - NEAT PLACE</li>
+                <li style="font-size:1.11vw;">E - ECCENTRIC NAME</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
